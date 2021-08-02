@@ -8,23 +8,23 @@ public class LogicOperations {
 
         // Relational Operator
 
-        System.out.println("a es mayor que b => " + (a > b));
-        System.out.println("a es menor que b => " + (a < b));
-        System.out.println("a es mayor o igual que b => " + (a >= b));
-        System.out.println("a es menor o igual que b => " + (a <= b));
+        System.out.println("a is greater than b => " + (a > b));
+        System.out.println("a is less than b => " + (a < b));
+        System.out.println("a is greater or equals b => " + (a >= b));
+        System.out.println("a is less or equals b => " + (a <= b));
 
         if(a == b) {
-            System.out.println("A es igual a B");
+            System.out.println("A equals B");
         } else if((a != b) && (a > b)) {
-            System.out.println("A es diferente a B");
+            System.out.println("A es different a B");
         }else if( a > b) {
-            System.out.println("A es mayor a B");
+            System.out.println("A is greater than B");
         }else if(a < b) {
-            System.out.println("A es menor a B");
+            System.out.println("A is less than B");
         }else if(a >= b) {
-            System.out.println("A es mayor igual a B");
+            System.out.println("A is greater or equals B");
         }else if(a <= b) {
-            System.out.println("A es menor igual a B");
+            System.out.println("A is less or equals B");
         }
     }
 }
