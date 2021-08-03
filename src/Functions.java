@@ -10,7 +10,8 @@ public class Functions {
         // (4/3)*PI * R3
         System.out.println(sphereVolume(y));
 
-        System.out.println("PESOS TO DOLLAR at 03/08/2021: " + convertToDolar(95000, "MXN"));
+        System.out.println("PESOS TO DOLLAR at 03/08/2021: " + convertToDollar(95000, "MXN"));
+
     }
 
     public static double circleArea(double radio) {
@@ -25,7 +26,13 @@ public class Functions {
         return (4/3) * Math.PI * Math.pow(radio, 3);
     }
 
-    public static double convertToDolar(double quantity, String currency) {
+    /**
+     * Description: Function to convert some PESOS to DOLLAR
+     * @param quantity Quantity of PESOS
+     * @param currency Type of PESOS: Only Accepts ARS, MXN, COP
+     * @return quantity Returns the updated quantity in Dollars
+     */
+    public static double convertToDollar(double quantity, String currency) {
         switch (currency) {
             case "ARS":
                 quantity = quantity * 0.010;
